@@ -1,0 +1,12 @@
+mutation newUser(
+  $name:String!
+)
+
+{
+ createUser(
+  name:$name
+)
+	{
+    id
+  }
+}
